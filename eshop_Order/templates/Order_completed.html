@@ -1,0 +1,59 @@
+{% extends 'shared/homebase.html' %}
+{% block title %} Order Completed  {% endblock %}
+{% block description %} {{ setting.description }}  {% endblock %}
+{% block keyword %} {{ setting.keywords }} {% endblock %}
+
+{% block sidebar %} {% include 'shared/sidebar.html' %} {% endblock %}
+
+{% block content %}
+    <!-- BREADCRUMB -->
+    <div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Order Completed</li>
+            </ul>
+        </div>
+    </div>
+    <!-- /BREADCRUMB -->
+    <!-- section -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="order-summary clearfix">
+                        <div class="section-title">
+                            <h3 class="title">Order Completed</h3>
+                        </div>
+                        <hr>
+                        <h2>Dear{{ user.first_name }} {{ user.last_name }}</h2>
+                        <hr>
+                        <h3>your product is completed</h3>
+                        <h3>Order code : {{ ordercode }}</h3>
+                        <h3>Thank you</h3>
+                        <table class="shopping-cart-table table">
+                            <tr>
+                                <th class="text-left">
+                                    <h3>back to home page</h3>
+                                    <a href="/" class="primary-btn">Home page</a>
+                                </th>
+
+                            </tr>
+
+                        </table>
+                        <hr>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /section -->
+
+{% endblock %}
