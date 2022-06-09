@@ -1,0 +1,5 @@
+venv/
+uploads/
+templates/admin
+static/
+.idea/
