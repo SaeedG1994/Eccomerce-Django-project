@@ -27,7 +27,7 @@ class ShopCart(models.Model):
 
 
 
-# THIS IS THE ORDER CLASS
+# THIS IS THE ORDER CLASS after Branch Commit
 #_____________________________________________________
 
 class Order(models.Model):
